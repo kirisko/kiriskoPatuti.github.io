@@ -1,0 +1,43 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="moves/idle-1.png" />  <!--Patuti in the title bar-->
+    <title>Co Patuti Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h6>Coded by: Cris Co BSIT-4 2021-2022</h6>
+    <div id="container">
+        <div id="bullets1" class="bullet"></div>
+        <div id="bullets2" class="bullet"></div>
+        <div id="bullets3" class="bullet"></div>
+        <div id="bullets11" class="bullet"></div> <!--Dummy Bullet so there is a chance no bullet will drop-->
+        <div id="bullets22" class="bullet"></div> <!--Dummy Bullet so there is a chance no bullet will drop-->
+        <div id="bullets33" class="bullet"></div> <!--Dummy Bullet so there is a chance no bullet will drop-->
+        <!--Side Bullet-->
+        <div id="bullets4" class="bullet2"></div>  
+        <div id="bullets5" class="bullet2"></div> 
+        <div id="bullets44" class="bullet2"></div>  <!--Dummy Bullet so there is a chance no bullet will shot-->
+        <div id="bullets55" class="bullet2"></div> <!--Dummy Bullet so there is a chance no bullet will shot-->
+
+        <div id="cliff"></div>
+        <img id="Patuti" src="moves/idle-1.png" style='position: absolute; left: 45%; top: 265px;'>
+      <img id="LifeBar" src="life/life-11.png" style='position: absolute; left: 80%; bottom: 5px;  height: 50px; width: 100px;' >             
+      <div id="leftfloor"></div>
+      <div id="bottomfloor"></div>
+      <button id="startgame">Patuti Dodge Bullets <br> <br>Start</button>
+      <button id="restart">Game Over <br> <br> Back to Main Menu</button>
+    </div>
+    <div id="instruction">
+        <h1>Controls:</h1>
+        <img id="" src="life/Instruction.png" >
+    </div>
+    
+    <!--Import Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="collision_detection.js"></script>
+    <script src="variables.js"></script>
+    <script src="script.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>

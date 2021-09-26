@@ -1,0 +1,154 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+  width: 800px;
+  height: 600px;
+  left: 20%;
+  position: relative;
+  border: 1px solid black;
+  background-image: url("./moves/bg.png");
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+  resize: both;
+}
+
+#instruction {
+  width: 600px;
+  height: 200px;
+  margin-left: 20%;
+  position: relative;
+  border: 1px solid transparent;
+  resize: both;
+  display: inline-block;
+  color: red;
+  font-size: 10px;
+}
+#cliff {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  background-image: url("./moves/area.png");
+  background-size: contain;
+  background-repeat: no-repeat, repeat;
+  top: 60%;
+  margin-left: 35%;
+}
+
+#leftfloor {
+  position: absolute;
+  height: 70%;
+  width: 2%;
+  background-color: transparent;
+  top: 10%;
+  margin-left: 0%;
+}
+
+#bottomfloor {
+  position: absolute;
+  height: 2%;
+  width: 70%;
+  background-color: transparent;
+  bottom: 20px;
+  margin-left: 10%;
+}
+
+.bullet {
+  position: absolute;
+  top: 0%;
+  height: 5%;
+  width: 2%;
+  background-image: url("./moves/bullet_v.png");
+  background-size: contain;
+  background-repeat: no-repeat, repeat;
+  border-radius: 50%;
+  z-index: 98;
+}
+#bullets1 {
+  left: calc(35% + 8% / 2 - 2% / 2);
+}
+#bullets2 {
+  left: calc(45% + 8% / 2 - 2% / 2);
+}
+#bullets3 {
+  left: calc(55% + 8% / 2 - 2% / 2);
+}
+#bullets11 {
+  background-image: none;
+  background-color: transparent;
+  left: calc(20% + 8% / 2 - 2% / 2);
+}
+#bullets22 {
+  background-image: none;
+  background-color: transparent;
+  left: calc(10% + 8% / 2 - 2% / 2);
+}
+#bullets33 {
+  background-image: none;
+  background-color: transparent;
+  left: calc(70% + 8% / 2 - 2% / 2);
+}
+.bullet2 {
+  position: absolute;
+  right: 0%;
+  height: 3%;
+  width: 4%;
+  background-image: url("./moves/bullet_h.png");
+  background-size: contain;
+  background-repeat: no-repeat, repeat;
+  border-radius: 50%;
+  z-index: 98;
+}
+#bullets4 {
+  top: calc(39% + 8% / 2 - 2% / 2);
+}
+#bullets5 {
+  top: calc(55% + 8% / 2 - 2% / 2);
+}
+#bullets44 {
+  background-image: none;
+  background-color: transparent;
+  top: calc(11% + 8% / 2 - 2% / 2);
+}
+#bullets55 {
+  background-image: none;
+  background-color: transparent;
+  top: calc(71% + 8% / 2 - 2% / 2);
+}
+
+#restart {
+  border: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: darkorchid;
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-size: 35px;
+  z-index: 99;
+  align-items: center;
+  opacity: 80%;
+}
+#startgame {
+  border: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #551d00;
+  color: FFC7AA;
+  cursor: pointer;
+  display: show;
+  font-size: 35px;
+  z-index: 99;
+  align-items: center;
+  opacity: 80%;
+}
+h6 {
+  width: 100px;
+  height: 2px;
+  padding: 5px;
+}
